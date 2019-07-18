@@ -1,0 +1,58 @@
+\hypertarget{interrupt_8c}{}\section{src/interrupt.c File Reference}
+\label{interrupt_8c}\index{src/interrupt.c@{src/interrupt.c}}
+
+
+File defining interruptions used in project.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}interrupt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}global\+Var.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pinconfig.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interrupt_8c_a2f59315000eb73fdeac2ab44fcd8b972}{T\+I\+M3\+\_\+\+I\+R\+Q\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Timer triggering temperature measurement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interrupt_8c_a6e7703924e97aa04dbae6b88adcec3d1}{T\+I\+M4\+\_\+\+I\+R\+Q\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Timer triggering fan start or stop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interrupt_8c_a2089b233bd8d6f7dbf78e075033696e3}{E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Reset L\+CD screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File defining interruptions used in project. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{interrupt_8c_a2089b233bd8d6f7dbf78e075033696e3}\label{interrupt_8c_a2089b233bd8d6f7dbf78e075033696e3}} 
+\index{interrupt.c@{interrupt.c}!EXTI15\_10\_IRQHandler@{EXTI15\_10\_IRQHandler}}
+\index{EXTI15\_10\_IRQHandler@{EXTI15\_10\_IRQHandler}!interrupt.c@{interrupt.c}}
+\subsubsection{\texorpdfstring{EXTI15\_10\_IRQHandler()}{EXTI15\_10\_IRQHandler()}}
+{\footnotesize\ttfamily void E\+X\+T\+I15\+\_\+10\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Reset L\+CD screen. 
+
+\mbox{\Hypertarget{interrupt_8c_a2f59315000eb73fdeac2ab44fcd8b972}\label{interrupt_8c_a2f59315000eb73fdeac2ab44fcd8b972}} 
+\index{interrupt.c@{interrupt.c}!TIM3\_IRQHandler@{TIM3\_IRQHandler}}
+\index{TIM3\_IRQHandler@{TIM3\_IRQHandler}!interrupt.c@{interrupt.c}}
+\subsubsection{\texorpdfstring{TIM3\_IRQHandler()}{TIM3\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M3\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Timer triggering temperature measurement. 
+
+\mbox{\Hypertarget{interrupt_8c_a6e7703924e97aa04dbae6b88adcec3d1}\label{interrupt_8c_a6e7703924e97aa04dbae6b88adcec3d1}} 
+\index{interrupt.c@{interrupt.c}!TIM4\_IRQHandler@{TIM4\_IRQHandler}}
+\index{TIM4\_IRQHandler@{TIM4\_IRQHandler}!interrupt.c@{interrupt.c}}
+\subsubsection{\texorpdfstring{TIM4\_IRQHandler()}{TIM4\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M4\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Timer triggering fan start or stop. 
+

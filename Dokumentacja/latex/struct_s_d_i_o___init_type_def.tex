@@ -1,0 +1,65 @@
+\hypertarget{struct_s_d_i_o___init_type_def}{}\section{S\+D\+I\+O\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_s_d_i_o___init_type_def}\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+
+
+{\ttfamily \#include $<$stm32f10x\+\_\+sdio.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_d_i_o___init_type_def_a9005baa5fb30fb068fbdbbf8856c651e}{S\+D\+I\+O\+\_\+\+Clock\+Edge}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_d_i_o___init_type_def_a30c395781536ad414f2dba26b1ad1e72}{S\+D\+I\+O\+\_\+\+Clock\+Bypass}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_d_i_o___init_type_def_a31edc8c1d4672ddb1ea60e22585398af}{S\+D\+I\+O\+\_\+\+Clock\+Power\+Save}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_d_i_o___init_type_def_ad128ddfd60ebdf846d0f07548ef9cf66}{S\+D\+I\+O\+\_\+\+Bus\+Wide}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_d_i_o___init_type_def_a2acacb64a58fbff9d7a31e6e0c0a3d2e}{S\+D\+I\+O\+\_\+\+Hardware\+Flow\+Control}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_s_d_i_o___init_type_def_a9f37419ca4d1fa1d39f93c12c2b2e91b}{S\+D\+I\+O\+\_\+\+Clock\+Div}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_s_d_i_o___init_type_def_ad128ddfd60ebdf846d0f07548ef9cf66}\label{struct_s_d_i_o___init_type_def_ad128ddfd60ebdf846d0f07548ef9cf66}} 
+\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}!SDIO\_BusWide@{SDIO\_BusWide}}
+\index{SDIO\_BusWide@{SDIO\_BusWide}!SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+\subsubsection{\texorpdfstring{SDIO\_BusWide}{SDIO\_BusWide}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Bus\+Wide}
+
+Specifies the S\+D\+IO bus width. This parameter can be a value of \mbox{\hyperlink{group___s_d_i_o___bus___wide}{S\+D\+I\+O\+\_\+\+Bus\+\_\+\+Wide}} \mbox{\Hypertarget{struct_s_d_i_o___init_type_def_a30c395781536ad414f2dba26b1ad1e72}\label{struct_s_d_i_o___init_type_def_a30c395781536ad414f2dba26b1ad1e72}} 
+\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}!SDIO\_ClockBypass@{SDIO\_ClockBypass}}
+\index{SDIO\_ClockBypass@{SDIO\_ClockBypass}!SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+\subsubsection{\texorpdfstring{SDIO\_ClockBypass}{SDIO\_ClockBypass}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Clock\+Bypass}
+
+Specifies whether the S\+D\+IO Clock divider bypass is enabled or disabled. This parameter can be a value of \mbox{\hyperlink{group___s_d_i_o___clock___bypass}{S\+D\+I\+O\+\_\+\+Clock\+\_\+\+Bypass}} \mbox{\Hypertarget{struct_s_d_i_o___init_type_def_a9f37419ca4d1fa1d39f93c12c2b2e91b}\label{struct_s_d_i_o___init_type_def_a9f37419ca4d1fa1d39f93c12c2b2e91b}} 
+\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}!SDIO\_ClockDiv@{SDIO\_ClockDiv}}
+\index{SDIO\_ClockDiv@{SDIO\_ClockDiv}!SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+\subsubsection{\texorpdfstring{SDIO\_ClockDiv}{SDIO\_ClockDiv}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+D\+I\+O\+\_\+\+Clock\+Div}
+
+Specifies the clock frequency of the S\+D\+IO controller. This parameter can be a value between 0x00 and 0x\+FF. \mbox{\Hypertarget{struct_s_d_i_o___init_type_def_a9005baa5fb30fb068fbdbbf8856c651e}\label{struct_s_d_i_o___init_type_def_a9005baa5fb30fb068fbdbbf8856c651e}} 
+\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}!SDIO\_ClockEdge@{SDIO\_ClockEdge}}
+\index{SDIO\_ClockEdge@{SDIO\_ClockEdge}!SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+\subsubsection{\texorpdfstring{SDIO\_ClockEdge}{SDIO\_ClockEdge}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Clock\+Edge}
+
+Specifies the clock transition on which the bit capture is made. This parameter can be a value of \mbox{\hyperlink{group___s_d_i_o___clock___edge}{S\+D\+I\+O\+\_\+\+Clock\+\_\+\+Edge}} \mbox{\Hypertarget{struct_s_d_i_o___init_type_def_a31edc8c1d4672ddb1ea60e22585398af}\label{struct_s_d_i_o___init_type_def_a31edc8c1d4672ddb1ea60e22585398af}} 
+\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}!SDIO\_ClockPowerSave@{SDIO\_ClockPowerSave}}
+\index{SDIO\_ClockPowerSave@{SDIO\_ClockPowerSave}!SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+\subsubsection{\texorpdfstring{SDIO\_ClockPowerSave}{SDIO\_ClockPowerSave}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Clock\+Power\+Save}
+
+Specifies whether S\+D\+IO Clock output is enabled or disabled when the bus is idle. This parameter can be a value of \mbox{\hyperlink{group___s_d_i_o___clock___power___save}{S\+D\+I\+O\+\_\+\+Clock\+\_\+\+Power\+\_\+\+Save}} \mbox{\Hypertarget{struct_s_d_i_o___init_type_def_a2acacb64a58fbff9d7a31e6e0c0a3d2e}\label{struct_s_d_i_o___init_type_def_a2acacb64a58fbff9d7a31e6e0c0a3d2e}} 
+\index{SDIO\_InitTypeDef@{SDIO\_InitTypeDef}!SDIO\_HardwareFlowControl@{SDIO\_HardwareFlowControl}}
+\index{SDIO\_HardwareFlowControl@{SDIO\_HardwareFlowControl}!SDIO\_InitTypeDef@{SDIO\_InitTypeDef}}
+\subsubsection{\texorpdfstring{SDIO\_HardwareFlowControl}{SDIO\_HardwareFlowControl}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+D\+I\+O\+\_\+\+Hardware\+Flow\+Control}
+
+Specifies whether the S\+D\+IO hardware flow control is enabled or disabled. This parameter can be a value of \mbox{\hyperlink{group___s_d_i_o___hardware___flow___control}{S\+D\+I\+O\+\_\+\+Hardware\+\_\+\+Flow\+\_\+\+Control}} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Std\+Periph\+\_\+\+Driver/inc/\mbox{\hyperlink{stm32f10x__sdio_8h}{stm32f10x\+\_\+sdio.\+h}}\end{DoxyCompactItemize}

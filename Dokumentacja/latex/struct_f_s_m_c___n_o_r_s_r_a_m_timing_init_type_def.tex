@@ -1,0 +1,103 @@
+\hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def}{}\section{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Timing\+Init\+Type\+Def Struct Reference}
+\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def}\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+
+
+Timing parameters For N\+O\+R/\+S\+R\+AM Banks.  
+
+
+
+
+{\ttfamily \#include $<$stm32f10x\+\_\+fsmc.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a947aed7df4d7c0d0959e1af373780b44}{F\+S\+M\+C\+\_\+\+Address\+Setup\+Time}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_ae220905040829fa65a833ddbae7fa119}{F\+S\+M\+C\+\_\+\+Address\+Hold\+Time}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a8c62c50435a67ef4de2f27b539c4c851}{F\+S\+M\+C\+\_\+\+Data\+Setup\+Time}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a015f5751cbb8c607102d8c735988c5c7}{F\+S\+M\+C\+\_\+\+Bus\+Turn\+Around\+Duration}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a4258c6027193e72763ab139cfd3af065}{F\+S\+M\+C\+\_\+\+C\+L\+K\+Division}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a656a0608f822088c5a94c926447a5e06}{F\+S\+M\+C\+\_\+\+Data\+Latency}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a11e5eff4e9915ddeac992c283094ae37}{F\+S\+M\+C\+\_\+\+Access\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Timing parameters For N\+O\+R/\+S\+R\+AM Banks. 
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a11e5eff4e9915ddeac992c283094ae37}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a11e5eff4e9915ddeac992c283094ae37}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_AccessMode@{FSMC\_AccessMode}}
+\index{FSMC\_AccessMode@{FSMC\_AccessMode}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_AccessMode}{FSMC\_AccessMode}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+Access\+Mode}
+
+Specifies the asynchronous access mode. This parameter can be a value of \mbox{\hyperlink{group___f_s_m_c___access___mode}{F\+S\+M\+C\+\_\+\+Access\+\_\+\+Mode}} \mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_ae220905040829fa65a833ddbae7fa119}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_ae220905040829fa65a833ddbae7fa119}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_AddressHoldTime@{FSMC\_AddressHoldTime}}
+\index{FSMC\_AddressHoldTime@{FSMC\_AddressHoldTime}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_AddressHoldTime}{FSMC\_AddressHoldTime}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+Address\+Hold\+Time}
+
+Defines the number of H\+C\+LK cycles to configure the duration of the address hold time. This parameter can be a value between 0 and 0xF. \begin{DoxyNote}{Note}
+\+: It is not used with synchronous N\+OR Flash memories. 
+\end{DoxyNote}
+\mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a947aed7df4d7c0d0959e1af373780b44}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a947aed7df4d7c0d0959e1af373780b44}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_AddressSetupTime@{FSMC\_AddressSetupTime}}
+\index{FSMC\_AddressSetupTime@{FSMC\_AddressSetupTime}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_AddressSetupTime}{FSMC\_AddressSetupTime}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+Address\+Setup\+Time}
+
+Defines the number of H\+C\+LK cycles to configure the duration of the address setup time. This parameter can be a value between 0 and 0xF. \begin{DoxyNote}{Note}
+\+: It is not used with synchronous N\+OR Flash memories. 
+\end{DoxyNote}
+\mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a015f5751cbb8c607102d8c735988c5c7}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a015f5751cbb8c607102d8c735988c5c7}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_BusTurnAroundDuration@{FSMC\_BusTurnAroundDuration}}
+\index{FSMC\_BusTurnAroundDuration@{FSMC\_BusTurnAroundDuration}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_BusTurnAroundDuration}{FSMC\_BusTurnAroundDuration}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bus\+Turn\+Around\+Duration}
+
+Defines the number of H\+C\+LK cycles to configure the duration of the bus turnaround. This parameter can be a value between 0 and 0xF. \begin{DoxyNote}{Note}
+\+: It is only used for multiplexed N\+OR Flash memories. 
+\end{DoxyNote}
+\mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a4258c6027193e72763ab139cfd3af065}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a4258c6027193e72763ab139cfd3af065}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_CLKDivision@{FSMC\_CLKDivision}}
+\index{FSMC\_CLKDivision@{FSMC\_CLKDivision}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_CLKDivision}{FSMC\_CLKDivision}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+C\+L\+K\+Division}
+
+Defines the period of C\+LK clock output signal, expressed in number of H\+C\+LK cycles. This parameter can be a value between 1 and 0xF. \begin{DoxyNote}{Note}
+\+: This parameter is not used for asynchronous N\+OR Flash, S\+R\+AM or R\+OM accesses. 
+\end{DoxyNote}
+\mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a656a0608f822088c5a94c926447a5e06}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a656a0608f822088c5a94c926447a5e06}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_DataLatency@{FSMC\_DataLatency}}
+\index{FSMC\_DataLatency@{FSMC\_DataLatency}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_DataLatency}{FSMC\_DataLatency}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+Data\+Latency}
+
+Defines the number of memory clock cycles to issue to the memory before getting the first data. The value of this parameter depends on the memory type as shown below\+:
+\begin{DoxyItemize}
+\item It must be set to 0 in case of a C\+R\+AM
+\item It is don\textquotesingle{}t care in asynchronous N\+OR, S\+R\+AM or R\+OM accesses
+\item It may assume a value between 0 and 0xF in N\+OR Flash memories with synchronous burst mode enable 
+\end{DoxyItemize}\mbox{\Hypertarget{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a8c62c50435a67ef4de2f27b539c4c851}\label{struct_f_s_m_c___n_o_r_s_r_a_m_timing_init_type_def_a8c62c50435a67ef4de2f27b539c4c851}} 
+\index{FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}!FSMC\_DataSetupTime@{FSMC\_DataSetupTime}}
+\index{FSMC\_DataSetupTime@{FSMC\_DataSetupTime}!FSMC\_NORSRAMTimingInitTypeDef@{FSMC\_NORSRAMTimingInitTypeDef}}
+\subsubsection{\texorpdfstring{FSMC\_DataSetupTime}{FSMC\_DataSetupTime}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+S\+M\+C\+\_\+\+Data\+Setup\+Time}
+
+Defines the number of H\+C\+LK cycles to configure the duration of the data setup time. This parameter can be a value between 0 and 0x\+FF. \begin{DoxyNote}{Note}
+\+: It is used for S\+R\+A\+Ms, R\+O\+Ms and asynchronous multiplexed N\+OR Flash memories. 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Std\+Periph\+\_\+\+Driver/inc/\mbox{\hyperlink{stm32f10x__fsmc_8h}{stm32f10x\+\_\+fsmc.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{uart_lib_8h}{}\section{inc/uart\+Lib.h File Reference}
+\label{uart_lib_8h}\index{inc/uartLib.h@{inc/uartLib.h}}
+
+
+U\+A\+RT Library header.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_lib_8h_a4bf168796f84a0a0b725fdeb06f15c73}{send\+\_\+char}} (char c)
+\begin{DoxyCompactList}\small\item\em Send single char. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_lib_8h_a9161f57780d037622c9697e56fffe3e5}{send\+\_\+string}} (const char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Send strings of chars. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_lib_8h_ab9bd98eab1c91c0fff90d0bed945530e}{change\+Temperature}} (const char $\ast$newtemperature)
+\begin{DoxyCompactList}\small\item\em Save new temperature value set by the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_lib_8h_a03672775c2967253d75a513c76fa8630}{recive\+Temperature}} (void)
+\item 
+void \mbox{\hyperlink{uart_lib_8h_a3291c6dfde335a6d0c430217c476a4ce}{uart\+Action}} (void)
+\begin{DoxyCompactList}\small\item\em Define what action was chosen by user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{uart_lib_8h_aa0a607477e5bbc033c448373b90387b8}{\+\_\+\+\_\+io\+\_\+putchar}} (int c)
+\begin{DoxyCompactList}\small\item\em Override used if \textquotesingle{}printf\textquotesingle{} via U\+S\+A\+RT is used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_lib_8h_a2db04512b4711e477669533d82e0016c}{send\+Instruction}} (void)
+\begin{DoxyCompactList}\small\item\em Send user manual info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+U\+A\+RT Library header. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{uart_lib_8h_aa0a607477e5bbc033c448373b90387b8}\label{uart_lib_8h_aa0a607477e5bbc033c448373b90387b8}} 
+\index{uartLib.h@{uartLib.h}!\_\_io\_putchar@{\_\_io\_putchar}}
+\index{\_\_io\_putchar@{\_\_io\_putchar}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{\_\_io\_putchar()}{\_\_io\_putchar()}}
+{\footnotesize\ttfamily int \+\_\+\+\_\+io\+\_\+putchar (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Override used if \textquotesingle{}printf\textquotesingle{} via U\+S\+A\+RT is used. 
+
+\mbox{\Hypertarget{uart_lib_8h_ab9bd98eab1c91c0fff90d0bed945530e}\label{uart_lib_8h_ab9bd98eab1c91c0fff90d0bed945530e}} 
+\index{uartLib.h@{uartLib.h}!changeTemperature@{changeTemperature}}
+\index{changeTemperature@{changeTemperature}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{changeTemperature()}{changeTemperature()}}
+{\footnotesize\ttfamily void change\+Temperature (\begin{DoxyParamCaption}\item[{const char $\ast$}]{newtemperature }\end{DoxyParamCaption})}
+
+
+
+Save new temperature value set by the user. 
+
+\mbox{\Hypertarget{uart_lib_8h_a03672775c2967253d75a513c76fa8630}\label{uart_lib_8h_a03672775c2967253d75a513c76fa8630}} 
+\index{uartLib.h@{uartLib.h}!reciveTemperature@{reciveTemperature}}
+\index{reciveTemperature@{reciveTemperature}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{reciveTemperature()}{reciveTemperature()}}
+{\footnotesize\ttfamily void recive\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_lib_8h_a4bf168796f84a0a0b725fdeb06f15c73}\label{uart_lib_8h_a4bf168796f84a0a0b725fdeb06f15c73}} 
+\index{uartLib.h@{uartLib.h}!send\_char@{send\_char}}
+\index{send\_char@{send\_char}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{send\_char()}{send\_char()}}
+{\footnotesize\ttfamily void send\+\_\+char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Send single char. 
+
+\mbox{\Hypertarget{uart_lib_8h_a9161f57780d037622c9697e56fffe3e5}\label{uart_lib_8h_a9161f57780d037622c9697e56fffe3e5}} 
+\index{uartLib.h@{uartLib.h}!send\_string@{send\_string}}
+\index{send\_string@{send\_string}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{send\_string()}{send\_string()}}
+{\footnotesize\ttfamily void send\+\_\+string (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Send strings of chars. 
+
+\mbox{\Hypertarget{uart_lib_8h_a2db04512b4711e477669533d82e0016c}\label{uart_lib_8h_a2db04512b4711e477669533d82e0016c}} 
+\index{uartLib.h@{uartLib.h}!sendInstruction@{sendInstruction}}
+\index{sendInstruction@{sendInstruction}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{sendInstruction()}{sendInstruction()}}
+{\footnotesize\ttfamily void send\+Instruction (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Send user manual info. 
+
+\mbox{\Hypertarget{uart_lib_8h_a3291c6dfde335a6d0c430217c476a4ce}\label{uart_lib_8h_a3291c6dfde335a6d0c430217c476a4ce}} 
+\index{uartLib.h@{uartLib.h}!uartAction@{uartAction}}
+\index{uartAction@{uartAction}!uartLib.h@{uartLib.h}}
+\subsubsection{\texorpdfstring{uartAction()}{uartAction()}}
+{\footnotesize\ttfamily void uart\+Action (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Define what action was chosen by user. 
+

@@ -1,0 +1,59 @@
+\hypertarget{group___s_p_i__data__direction}{}\section{S\+P\+I\+\_\+data\+\_\+direction}
+\label{group___s_p_i__data__direction}\index{SPI\_data\_direction@{SPI\_data\_direction}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_p_i__data__direction_gab6bdb82e315a90210c4425c46bbdf5f1}{S\+P\+I\+\_\+\+Direction\+\_\+2\+Lines\+\_\+\+Full\+Duplex}}~((uint16\+\_\+t)0x0000)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i__data__direction_gab8ab942f7240394f50e4c86c5288516a}{S\+P\+I\+\_\+\+Direction\+\_\+2\+Lines\+\_\+\+Rx\+Only}}~((uint16\+\_\+t)0x0400)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i__data__direction_ga42ea8306cfc1f23ffc51efae6f66320e}{S\+P\+I\+\_\+\+Direction\+\_\+1\+Line\+\_\+\+Rx}}~((uint16\+\_\+t)0x8000)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i__data__direction_ga70cc710a771065b2ed11c2ac9697defe}{S\+P\+I\+\_\+\+Direction\+\_\+1\+Line\+\_\+\+Tx}}~((uint16\+\_\+t)0x\+C000)
+\item 
+\#define \mbox{\hyperlink{group___s_p_i__data__direction_ga536857c68ce1d9806c04046707448b3e}{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}(M\+O\+DE)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_p_i__data__direction_ga536857c68ce1d9806c04046707448b3e}\label{group___s_p_i__data__direction_ga536857c68ce1d9806c04046707448b3e}} 
+\index{SPI\_data\_direction@{SPI\_data\_direction}!IS\_SPI\_DIRECTION\_MODE@{IS\_SPI\_DIRECTION\_MODE}}
+\index{IS\_SPI\_DIRECTION\_MODE@{IS\_SPI\_DIRECTION\_MODE}!SPI\_data\_direction@{SPI\_data\_direction}}
+\subsubsection{\texorpdfstring{IS\_SPI\_DIRECTION\_MODE}{IS\_SPI\_DIRECTION\_MODE}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE(\begin{DoxyParamCaption}\item[{}]{M\+O\+DE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((MODE) == \mbox{\hyperlink{group___s_p_i__data__direction_gab6bdb82e315a90210c4425c46bbdf5f1}{SPI\_Direction\_2Lines\_FullDuplex}}) || \(\backslash\)}
+\DoxyCodeLine{                                     ((MODE) == \mbox{\hyperlink{group___s_p_i__data__direction_gab8ab942f7240394f50e4c86c5288516a}{SPI\_Direction\_2Lines\_RxOnly}}) || \(\backslash\)}
+\DoxyCodeLine{                                     ((MODE) == \mbox{\hyperlink{group___s_p_i__data__direction_ga42ea8306cfc1f23ffc51efae6f66320e}{SPI\_Direction\_1Line\_Rx}}) || \(\backslash\)}
+\DoxyCodeLine{                                     ((MODE) == \mbox{\hyperlink{group___s_p_i__data__direction_ga70cc710a771065b2ed11c2ac9697defe}{SPI\_Direction\_1Line\_Tx}}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{group___s_p_i__data__direction_ga42ea8306cfc1f23ffc51efae6f66320e}\label{group___s_p_i__data__direction_ga42ea8306cfc1f23ffc51efae6f66320e}} 
+\index{SPI\_data\_direction@{SPI\_data\_direction}!SPI\_Direction\_1Line\_Rx@{SPI\_Direction\_1Line\_Rx}}
+\index{SPI\_Direction\_1Line\_Rx@{SPI\_Direction\_1Line\_Rx}!SPI\_data\_direction@{SPI\_data\_direction}}
+\subsubsection{\texorpdfstring{SPI\_Direction\_1Line\_Rx}{SPI\_Direction\_1Line\_Rx}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+Direction\+\_\+1\+Line\+\_\+\+Rx~((uint16\+\_\+t)0x8000)}
+
+\mbox{\Hypertarget{group___s_p_i__data__direction_ga70cc710a771065b2ed11c2ac9697defe}\label{group___s_p_i__data__direction_ga70cc710a771065b2ed11c2ac9697defe}} 
+\index{SPI\_data\_direction@{SPI\_data\_direction}!SPI\_Direction\_1Line\_Tx@{SPI\_Direction\_1Line\_Tx}}
+\index{SPI\_Direction\_1Line\_Tx@{SPI\_Direction\_1Line\_Tx}!SPI\_data\_direction@{SPI\_data\_direction}}
+\subsubsection{\texorpdfstring{SPI\_Direction\_1Line\_Tx}{SPI\_Direction\_1Line\_Tx}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+Direction\+\_\+1\+Line\+\_\+\+Tx~((uint16\+\_\+t)0x\+C000)}
+
+\mbox{\Hypertarget{group___s_p_i__data__direction_gab6bdb82e315a90210c4425c46bbdf5f1}\label{group___s_p_i__data__direction_gab6bdb82e315a90210c4425c46bbdf5f1}} 
+\index{SPI\_data\_direction@{SPI\_data\_direction}!SPI\_Direction\_2Lines\_FullDuplex@{SPI\_Direction\_2Lines\_FullDuplex}}
+\index{SPI\_Direction\_2Lines\_FullDuplex@{SPI\_Direction\_2Lines\_FullDuplex}!SPI\_data\_direction@{SPI\_data\_direction}}
+\subsubsection{\texorpdfstring{SPI\_Direction\_2Lines\_FullDuplex}{SPI\_Direction\_2Lines\_FullDuplex}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+Direction\+\_\+2\+Lines\+\_\+\+Full\+Duplex~((uint16\+\_\+t)0x0000)}
+
+\mbox{\Hypertarget{group___s_p_i__data__direction_gab8ab942f7240394f50e4c86c5288516a}\label{group___s_p_i__data__direction_gab8ab942f7240394f50e4c86c5288516a}} 
+\index{SPI\_data\_direction@{SPI\_data\_direction}!SPI\_Direction\_2Lines\_RxOnly@{SPI\_Direction\_2Lines\_RxOnly}}
+\index{SPI\_Direction\_2Lines\_RxOnly@{SPI\_Direction\_2Lines\_RxOnly}!SPI\_data\_direction@{SPI\_data\_direction}}
+\subsubsection{\texorpdfstring{SPI\_Direction\_2Lines\_RxOnly}{SPI\_Direction\_2Lines\_RxOnly}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+Direction\+\_\+2\+Lines\+\_\+\+Rx\+Only~((uint16\+\_\+t)0x0400)}
+

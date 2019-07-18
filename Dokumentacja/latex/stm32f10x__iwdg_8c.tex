@@ -1,0 +1,54 @@
+\hypertarget{stm32f10x__iwdg_8c}{}\section{Std\+Periph\+\_\+\+Driver/src/stm32f10x\+\_\+iwdg.c File Reference}
+\label{stm32f10x__iwdg_8c}\index{StdPeriph\_Driver/src/stm32f10x\_iwdg.c@{StdPeriph\_Driver/src/stm32f10x\_iwdg.c}}
+
+
+This file provides all the I\+W\+DG firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+iwdg.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___i_w_d_g___private___defines_gad5e5efc1dbd6a045da5a36c3d9df16a5}{K\+R\+\_\+\+K\+E\+Y\+\_\+\+Reload}}~((uint16\+\_\+t)0x\+A\+A\+A\+A)
+\item 
+\#define \mbox{\hyperlink{group___i_w_d_g___private___defines_ga833138e20c8a26786dd7ca3b132152ed}{K\+R\+\_\+\+K\+E\+Y\+\_\+\+Enable}}~((uint16\+\_\+t)0x\+C\+C\+C\+C)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___i_w_d_g___private___functions_gae466681e5bdc11b353c508b89d75ca05}{I\+W\+D\+G\+\_\+\+Write\+Access\+Cmd}} (uint16\+\_\+t I\+W\+D\+G\+\_\+\+Write\+Access)
+\begin{DoxyCompactList}\small\item\em Enables or disables write access to I\+W\+D\+G\+\_\+\+PR and I\+W\+D\+G\+\_\+\+R\+LR registers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___private___functions_ga4fa7f1cd690533a35ad9e4729c0450a3}{I\+W\+D\+G\+\_\+\+Set\+Prescaler}} (uint8\+\_\+t I\+W\+D\+G\+\_\+\+Prescaler)
+\begin{DoxyCompactList}\small\item\em Sets I\+W\+DG Prescaler value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___private___functions_gae2a14752a0431f23cb80cebf202ac365}{I\+W\+D\+G\+\_\+\+Set\+Reload}} (uint16\+\_\+t Reload)
+\begin{DoxyCompactList}\small\item\em Sets I\+W\+DG Reload value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___private___functions_ga7147ebabdc3fef97f532b171a4e70d49}{I\+W\+D\+G\+\_\+\+Reload\+Counter}} (void)
+\begin{DoxyCompactList}\small\item\em Reloads I\+W\+DG counter with value defined in the reload register (write access to I\+W\+D\+G\+\_\+\+PR and I\+W\+D\+G\+\_\+\+R\+LR registers disabled). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___i_w_d_g___private___functions_ga479b2921c86f8c67b819f5c4bea6bdb6}{I\+W\+D\+G\+\_\+\+Enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enables I\+W\+DG (write access to I\+W\+D\+G\+\_\+\+PR and I\+W\+D\+G\+\_\+\+R\+LR registers disabled). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___i_w_d_g___private___functions_ga37f050cfbedc0c15f9e0816c0b22011e}{I\+W\+D\+G\+\_\+\+Get\+Flag\+Status}} (uint16\+\_\+t I\+W\+D\+G\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I\+W\+DG flag is set or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the I\+W\+DG firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+6.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/March-\/2012 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2012 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

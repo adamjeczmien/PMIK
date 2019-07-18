@@ -1,0 +1,70 @@
+\hypertarget{flash_8c}{}\section{src/flash.c File Reference}
+\label{flash_8c}\index{src/flash.c@{src/flash.c}}
+
+
+Functions handling flash memory.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}global\+Var.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{flash_8c_ae5083a55b63a13289f76001374060fdb}{Page\+\_\+127}}~0x0801\+F\+C00
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{flash_8c_a2dff209dcb429e444088b017e480e964}{F\+L\+A\+S\+H\+\_\+write}} (uint16\+\_\+t $\ast$data, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Write into memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{flash_8c_aa1687c3555294c43cb03fce1e41182f3}{F\+L\+A\+S\+H\+\_\+read}} (uint16\+\_\+t $\ast$data, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Read from memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{flash_8c_aa2bb46be686f34b187d8de0942695155}{read\+Previous\+Temperature}} ()
+\begin{DoxyCompactList}\small\item\em Read previous trigger value from flash. If there was no value start with default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions handling flash memory. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{flash_8c_ae5083a55b63a13289f76001374060fdb}\label{flash_8c_ae5083a55b63a13289f76001374060fdb}} 
+\index{flash.c@{flash.c}!Page\_127@{Page\_127}}
+\index{Page\_127@{Page\_127}!flash.c@{flash.c}}
+\subsubsection{\texorpdfstring{Page\_127}{Page\_127}}
+{\footnotesize\ttfamily \#define Page\+\_\+127~0x0801\+F\+C00}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{flash_8c_aa1687c3555294c43cb03fce1e41182f3}\label{flash_8c_aa1687c3555294c43cb03fce1e41182f3}} 
+\index{flash.c@{flash.c}!FLASH\_read@{FLASH\_read}}
+\index{FLASH\_read@{FLASH\_read}!flash.c@{flash.c}}
+\subsubsection{\texorpdfstring{FLASH\_read()}{FLASH\_read()}}
+{\footnotesize\ttfamily void F\+L\+A\+S\+H\+\_\+read (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{data,  }\item[{uint16\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Read from memory. 
+
+\mbox{\Hypertarget{flash_8c_a2dff209dcb429e444088b017e480e964}\label{flash_8c_a2dff209dcb429e444088b017e480e964}} 
+\index{flash.c@{flash.c}!FLASH\_write@{FLASH\_write}}
+\index{FLASH\_write@{FLASH\_write}!flash.c@{flash.c}}
+\subsubsection{\texorpdfstring{FLASH\_write()}{FLASH\_write()}}
+{\footnotesize\ttfamily void F\+L\+A\+S\+H\+\_\+write (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{data,  }\item[{uint16\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Write into memory. 
+
+\mbox{\Hypertarget{flash_8c_aa2bb46be686f34b187d8de0942695155}\label{flash_8c_aa2bb46be686f34b187d8de0942695155}} 
+\index{flash.c@{flash.c}!readPreviousTemperature@{readPreviousTemperature}}
+\index{readPreviousTemperature@{readPreviousTemperature}!flash.c@{flash.c}}
+\subsubsection{\texorpdfstring{readPreviousTemperature()}{readPreviousTemperature()}}
+{\footnotesize\ttfamily void read\+Previous\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Read previous trigger value from flash. If there was no value start with default. 
+

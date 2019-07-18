@@ -1,0 +1,56 @@
+\hypertarget{stm32f10x__exti_8c}{}\section{Std\+Periph\+\_\+\+Driver/src/stm32f10x\+\_\+exti.c File Reference}
+\label{stm32f10x__exti_8c}\index{StdPeriph\_Driver/src/stm32f10x\_exti.c@{StdPeriph\_Driver/src/stm32f10x\_exti.c}}
+
+
+This file provides all the E\+X\+TI firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+exti.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___e_x_t_i___private___defines_ga4451b67e337fc341394ee695273798af}{E\+X\+T\+I\+\_\+\+L\+I\+N\+E\+N\+O\+NE}}~((uint32\+\_\+t)0x00000)  /$\ast$ No interrupt selected $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___e_x_t_i___private___functions_ga07072e339cb9ecb9cd9d4b94afc9f317}{E\+X\+T\+I\+\_\+\+De\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the E\+X\+TI peripheral registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___private___functions_ga8c9ce6352a3a2dfc8fc9287cb24c6501}{E\+X\+T\+I\+\_\+\+Init}} (\mbox{\hyperlink{struct_e_x_t_i___init_type_def}{E\+X\+T\+I\+\_\+\+Init\+Type\+Def}} $\ast$E\+X\+T\+I\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the E\+X\+TI peripheral according to the specified parameters in the E\+X\+T\+I\+\_\+\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___private___functions_ga86b9e662d18a2f829999cfb26aa7ca20}{E\+X\+T\+I\+\_\+\+Struct\+Init}} (\mbox{\hyperlink{struct_e_x_t_i___init_type_def}{E\+X\+T\+I\+\_\+\+Init\+Type\+Def}} $\ast$E\+X\+T\+I\+\_\+\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each E\+X\+T\+I\+\_\+\+Init\+Struct member with its reset value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___private___functions_ga897e8ea59f40a19e047fb9994876fc9b}{E\+X\+T\+I\+\_\+\+Generate\+S\+W\+Interrupt}} (uint32\+\_\+t E\+X\+T\+I\+\_\+\+Line)
+\begin{DoxyCompactList}\small\item\em Generates a Software interrupt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___e_x_t_i___private___functions_ga0ce06e6b312592df149800d63218cffa}{E\+X\+T\+I\+\_\+\+Get\+Flag\+Status}} (uint32\+\_\+t E\+X\+T\+I\+\_\+\+Line)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified E\+X\+TI line flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___private___functions_ga8e07aaaa286dea4803605d5968850a92}{E\+X\+T\+I\+\_\+\+Clear\+Flag}} (uint32\+\_\+t E\+X\+T\+I\+\_\+\+Line)
+\begin{DoxyCompactList}\small\item\em Clears the E\+X\+TI\textquotesingle{}s line pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status}} \mbox{\hyperlink{group___e_x_t_i___private___functions_gaf7b51519062ae42fd27ee689cab364aa}{E\+X\+T\+I\+\_\+\+Get\+I\+T\+Status}} (uint32\+\_\+t E\+X\+T\+I\+\_\+\+Line)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified E\+X\+TI line is asserted or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___e_x_t_i___private___functions_ga3652a7e682728b310c124e7e974d1468}{E\+X\+T\+I\+\_\+\+Clear\+I\+T\+Pending\+Bit}} (uint32\+\_\+t E\+X\+T\+I\+\_\+\+Line)
+\begin{DoxyCompactList}\small\item\em Clears the E\+X\+TI\textquotesingle{}s line pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the E\+X\+TI firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+6.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/March-\/2012 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2012 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

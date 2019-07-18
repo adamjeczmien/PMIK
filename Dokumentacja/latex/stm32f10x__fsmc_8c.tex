@@ -1,0 +1,93 @@
+\hypertarget{stm32f10x__fsmc_8c}{}\section{Std\+Periph\+\_\+\+Driver/src/stm32f10x\+\_\+fsmc.c File Reference}
+\label{stm32f10x__fsmc_8c}\index{StdPeriph\_Driver/src/stm32f10x\_fsmc.c@{StdPeriph\_Driver/src/stm32f10x\_fsmc.c}}
+
+
+This file provides all the F\+S\+MC firmware functions.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+fsmc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f10x\+\_\+rcc.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_ga3c427afcf32b17fb72be67fd4638e6d5}{B\+C\+R\+\_\+\+M\+B\+K\+E\+N\+\_\+\+Set}}~((uint32\+\_\+t)0x00000001)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_gaa63b72d32a32c53a057ee0a45bed0d3b}{B\+C\+R\+\_\+\+M\+B\+K\+E\+N\+\_\+\+Reset}}~((uint32\+\_\+t)0x000\+F\+F\+F\+F\+E)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_ga38da33a73789b2c932962d75dfc1341f}{B\+C\+R\+\_\+\+F\+A\+C\+C\+E\+N\+\_\+\+Set}}~((uint32\+\_\+t)0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_gade871050f882b7f48582084b0e95f67c}{P\+C\+R\+\_\+\+P\+B\+K\+E\+N\+\_\+\+Set}}~((uint32\+\_\+t)0x00000004)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_gac6d0ddc3888a0554b032f0f484cfe332}{P\+C\+R\+\_\+\+P\+B\+K\+E\+N\+\_\+\+Reset}}~((uint32\+\_\+t)0x000\+F\+F\+F\+F\+B)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_ga8a0d7950936e3869b449d421e03a19ac}{P\+C\+R\+\_\+\+E\+C\+C\+E\+N\+\_\+\+Set}}~((uint32\+\_\+t)0x00000040)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_gaca1a5c5cd46c8a32dab58c3eb3b865fa}{P\+C\+R\+\_\+\+E\+C\+C\+E\+N\+\_\+\+Reset}}~((uint32\+\_\+t)0x000\+F\+F\+F\+B\+F)
+\item 
+\#define \mbox{\hyperlink{group___f_s_m_c___private___defines_gaf3992efb285ab994c41463af5107c501}{P\+C\+R\+\_\+\+Memory\+Type\+\_\+\+N\+A\+ND}}~((uint32\+\_\+t)0x00000008)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_gaab3e6648e8a584e73785361ac960eded}{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+De\+Init}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank)
+\begin{DoxyCompactList}\small\item\em Deinitializes the F\+S\+MC N\+O\+R/\+S\+R\+AM Banks registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_gafb749503293474a68555961bd8f120e1}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+De\+Init}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank)
+\begin{DoxyCompactList}\small\item\em Deinitializes the F\+S\+MC N\+A\+ND Banks registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga2f53ccf3a4f3c80a5a56fb47ccd47ccd}{F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+De\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Deinitializes the F\+S\+MC P\+C\+C\+A\+RD Bank registers to their default reset values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga9c27816e8b17394c9ee1ce9298917b4a}{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def}{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init\+Type\+Def}} $\ast$F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the F\+S\+MC N\+O\+R/\+S\+R\+AM Banks according to the specified parameters in the F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga9f81ccc4e126c11f1eb33077b1a68e6f}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_a_n_d_init_type_def}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init\+Type\+Def}} $\ast$F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the F\+S\+MC N\+A\+ND Banks according to the specified parameters in the F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_gacee1351363e7700a296faa1734a910aa}{F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___p_c_c_a_r_d_init_type_def}{F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init\+Type\+Def}} $\ast$F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Initializes the F\+S\+MC P\+C\+C\+A\+RD Bank according to the specified parameters in the F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init\+Struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_gaf33e6dfc34f62d16a0cb416de9e83d28}{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Struct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_o_r_s_r_a_m_init_type_def}{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init\+Type\+Def}} $\ast$F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga8283ad94ad8e83d49d5b77d1c7e17862}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Struct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___n_a_n_d_init_type_def}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init\+Type\+Def}} $\ast$F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga7a64ba0e0545b3f1913c9d1d28c05e62}{F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Struct\+Init}} (\mbox{\hyperlink{struct_f_s_m_c___p_c_c_a_r_d_init_type_def}{F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init\+Type\+Def}} $\ast$F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init\+Struct)
+\begin{DoxyCompactList}\small\item\em Fills each F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Init\+Struct member with its default value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_gaf943f0f2680168d3a95a3c2c9f3eca2a}{F\+S\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+Cmd}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, \mbox{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified N\+O\+R/\+S\+R\+AM Memory Bank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga33ec7c39ea4d42e92c72c6e517d8235c}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+Cmd}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, \mbox{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified N\+A\+ND Memory Bank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga2d410151ceb3428c6a1bf374a0472cde}{F\+S\+M\+C\+\_\+\+P\+C\+C\+A\+R\+D\+Cmd}} (\mbox{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the P\+C\+C\+A\+RD Memory Bank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga5800301fc39bbe998a18ebd9ff191cdc}{F\+S\+M\+C\+\_\+\+N\+A\+N\+D\+E\+C\+C\+Cmd}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, \mbox{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the F\+S\+MC N\+A\+ND E\+CC feature. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group___f_s_m_c___private___functions_gaad6d4f5b5a41684ce053fea55bdb98d8}{F\+S\+M\+C\+\_\+\+Get\+E\+CC}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank)
+\begin{DoxyCompactList}\small\item\em Returns the error correction code register value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga217027ae3cd213b9076b6a1be197064c}{F\+S\+M\+C\+\_\+\+I\+T\+Config}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, uint32\+\_\+t F\+S\+M\+C\+\_\+\+IT, \mbox{\hyperlink{group___exported__types_gac9a7e9a35d2513ec15c3b537aaa4fba1}{Functional\+State}} New\+State)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified F\+S\+MC interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___exported__types_ga89136caac2e14c55151f527ac02daaff}{Flag\+Status}} \mbox{\hyperlink{group___f_s_m_c___private___functions_gae00355115b078f483f0771057bb849c4}{F\+S\+M\+C\+\_\+\+Get\+Flag\+Status}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, uint32\+\_\+t F\+S\+M\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\+S\+MC flag is set or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_ga697618f2de0ad9a8a82461ddbebd5264}{F\+S\+M\+C\+\_\+\+Clear\+Flag}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, uint32\+\_\+t F\+S\+M\+C\+\_\+\+F\+L\+AG)
+\begin{DoxyCompactList}\small\item\em Clears the F\+S\+MC\textquotesingle{}s pending flags. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___exported__types_gaacbd7ed539db0aacd973a0f6eca34074}{I\+T\+Status}} \mbox{\hyperlink{group___f_s_m_c___private___functions_ga7fce9ca889d33cd8b8b7413875dd4d73}{F\+S\+M\+C\+\_\+\+Get\+I\+T\+Status}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, uint32\+\_\+t F\+S\+M\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified F\+S\+MC interrupt has occurred or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___f_s_m_c___private___functions_gad9387e7674b8a376256a3378649e004e}{F\+S\+M\+C\+\_\+\+Clear\+I\+T\+Pending\+Bit}} (uint32\+\_\+t F\+S\+M\+C\+\_\+\+Bank, uint32\+\_\+t F\+S\+M\+C\+\_\+\+IT)
+\begin{DoxyCompactList}\small\item\em Clears the F\+S\+MC\textquotesingle{}s interrupt pending bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides all the F\+S\+MC firmware functions. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+6.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/March-\/2012 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2012 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

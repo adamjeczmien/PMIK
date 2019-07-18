@@ -1,0 +1,82 @@
+\hypertarget{stm32f1xx__nucleo_8c}{}\section{Utilities/\+S\+T\+M32\+F1xx-\/\+Nucleo/stm32f1xx\+\_\+nucleo.c File Reference}
+\label{stm32f1xx__nucleo_8c}\index{Utilities/STM32F1xx-\/Nucleo/stm32f1xx\_nucleo.c@{Utilities/STM32F1xx-\/Nucleo/stm32f1xx\_nucleo.c}}
+
+
+This file provides set of firmware functions to manage Leds and push-\/button available on S\+T\+M32\+N\+U\+C\+L\+EO Kit from S\+T\+Microelectronics. It provides also functions to configure and manage the S\+T\+M32\+F3xx resources (S\+PI and A\+DC) used to drive L\+CD, u\+SD card and Joystick available on adafruit 1.\+8" T\+FT shield.  
+
+
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+nucleo.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga01e1a245e786705357f741c8d42cbd3a}{S\+T\+M\+\_\+\+E\+V\+A\+L\+\_\+\+L\+E\+D\+Init}} (\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_gaa059704b7ca945eb9c1e7f2c3d03fecd}{Led\+\_\+\+Type\+Def}} Led)
+\begin{DoxyCompactList}\small\item\em Configures L\+ED G\+P\+IO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_gad27fa430d867e6dde94cb7896fcc42fc}{S\+T\+M\+\_\+\+E\+V\+A\+L\+\_\+\+L\+E\+D\+On}} (\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_gaa059704b7ca945eb9c1e7f2c3d03fecd}{Led\+\_\+\+Type\+Def}} Led)
+\begin{DoxyCompactList}\small\item\em Turns selected L\+ED On. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_gab9ab7deafd606e72d72580ec974b7757}{S\+T\+M\+\_\+\+E\+V\+A\+L\+\_\+\+L\+E\+D\+Off}} (\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_gaa059704b7ca945eb9c1e7f2c3d03fecd}{Led\+\_\+\+Type\+Def}} Led)
+\begin{DoxyCompactList}\small\item\em Turns selected L\+ED Off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga5b1ccd57cf505c1d41440e62a845e4a9}{S\+T\+M\+\_\+\+E\+V\+A\+L\+\_\+\+L\+E\+D\+Toggle}} (\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_gaa059704b7ca945eb9c1e7f2c3d03fecd}{Led\+\_\+\+Type\+Def}} Led)
+\begin{DoxyCompactList}\small\item\em Toggles the selected L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga1cdc19fe328ddcd17bf50fcb62d78369}{S\+T\+M\+\_\+\+E\+V\+A\+L\+\_\+\+P\+B\+Init}} (\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_ga643816dfbad5c734fc25a29ce8d35bb1}{Button\+\_\+\+Type\+Def}} Button, \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_ga48825b7c7d851c440ef8e808fd9d8f0a}{Button\+Mode\+\_\+\+Type\+Def}} Button\+\_\+\+Mode)
+\begin{DoxyCompactList}\small\item\em Configures Button G\+P\+IO and E\+X\+TI Line. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga812ee2a84aaed235587ac81eb9269442}{S\+T\+M\+\_\+\+E\+V\+A\+L\+\_\+\+P\+B\+Get\+State}} (\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_ga643816dfbad5c734fc25a29ce8d35bb1}{Button\+\_\+\+Type\+Def}} Button)
+\begin{DoxyCompactList}\small\item\em Returns the selected Button state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga7738cdccebd6af452a4843906acb8b31}{S\+T\+M\+\_\+\+S\+P\+I\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+PI Interface used to drive the L\+CD and u\+SD card available on adafruit 1.\+8" T\+FT shield. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga97c5f806cbaa70bc21a31c96ce30c700}{L\+C\+D\+\_\+\+Ctrl\+Lines\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Configures L\+CD control lines (CS and DC) in Output Push-\/\+Pull mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_gab74f2e2b8a8574b00ea67be7fda66e1d}{S\+D\+\_\+\+Ctrl\+Lines\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Configures u\+SD control line (CS) in Output Push-\/\+Pull mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga018a36360d14b84d8e0e0b2d2471d673}{S\+T\+M\+\_\+\+S\+P\+I\+\_\+\+Write\+Read}} (uint8\+\_\+t Data)
+\begin{DoxyCompactList}\small\item\em Sends a byte through the S\+PI interface and return the byte received from the S\+PI bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_ga7490dd52f52a50afa37e2ed329d5c82a}{S\+T\+M\+\_\+\+A\+D\+C\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes A\+DC, used to detect motion of Joystick available on adafruit 1.\+8" T\+FT shield. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___exported___types_ga7466d9ae142b713772373c9ddfc90332}{J\+O\+Y\+State\+\_\+\+Type\+Def}} \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___functions_gab68de4912bc80f43614605cd410a0b4d}{S\+T\+M\+\_\+\+Get\+\_\+\+J\+O\+Y\+State}} (void)
+\begin{DoxyCompactList}\small\item\em Returns the Joystick key pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_g_p_i_o___type_def}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$ \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_gadfddcc182c40163aaa7b3c7f36e42ed9}{G\+P\+I\+O\+\_\+\+P\+O\+RT}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___l_e_d_gab4be2480bf7d44d52aab1190a65a733c}{L\+E\+Dn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___l_e_d_gaf88822ae4b79d37c7735ce1160b59f68}{L\+E\+D2\+\_\+\+G\+P\+I\+O\+\_\+\+P\+O\+RT}}\}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_ga7f675ed2b6edb74e2d8406f8a4a677f5}{G\+P\+I\+O\+\_\+\+P\+IN}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___l_e_d_gab4be2480bf7d44d52aab1190a65a733c}{L\+E\+Dn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___l_e_d_gaf6f84078113b55354d20585131b386f7}{L\+E\+D2\+\_\+\+P\+IN}}\}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_gaeef08b09ae717d36fdb4693a58ae0261}{G\+P\+I\+O\+\_\+\+C\+LK}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___l_e_d_gab4be2480bf7d44d52aab1190a65a733c}{L\+E\+Dn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___l_e_d_ga972d10beb8aa0aa7a6edf70e5a6200ff}{L\+E\+D2\+\_\+\+G\+P\+I\+O\+\_\+\+C\+LK}}\}
+\item 
+\mbox{\hyperlink{struct_g_p_i_o___type_def}{G\+P\+I\+O\+\_\+\+Type\+Def}} $\ast$ \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_gad63ed42b4071e78f80f7462227da4f35}{B\+U\+T\+T\+O\+N\+\_\+\+P\+O\+RT}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_gae2e6fc2fdfda22b4eed3667375a8bd81}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+G\+P\+I\+O\+\_\+\+P\+O\+RT}}\}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_gadf78f2d71408a01f8d30929c2d2da82b}{B\+U\+T\+T\+O\+N\+\_\+\+P\+IN}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga34df6915e3013d6a0c74131d3946b659}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+P\+IN}}\}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_gaba532cec9f512c154ac07f1dfa7bfa2f}{B\+U\+T\+T\+O\+N\+\_\+\+C\+LK}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_gac94af9563fb54d762f1d5351593ee218}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+G\+P\+I\+O\+\_\+\+C\+LK}}\}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_ga1760a56d44de70153c4c1a8c785d583b}{B\+U\+T\+T\+O\+N\+\_\+\+E\+X\+T\+I\+\_\+\+L\+I\+NE}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_gac41d04c2244ba780e4749991c85d1e9a}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+E\+X\+T\+I\+\_\+\+L\+I\+NE}}\}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_ga043001d613d9070343f086a1fb778b56}{B\+U\+T\+T\+O\+N\+\_\+\+P\+O\+R\+T\+\_\+\+S\+O\+U\+R\+CE}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_gadb21b50e395cd0cbede08485aa46a7e1}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+E\+X\+T\+I\+\_\+\+P\+O\+R\+T\+\_\+\+S\+O\+U\+R\+CE}}\}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_ga80c29ecf61c61be41ec382cd2a93fcec}{B\+U\+T\+T\+O\+N\+\_\+\+P\+I\+N\+\_\+\+S\+O\+U\+R\+CE}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga228dea1ae32daacecea1c9344ba93cd3}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+E\+X\+T\+I\+\_\+\+P\+I\+N\+\_\+\+S\+O\+U\+R\+CE}}\}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___private___variables_ga13c3e27c584df9fccc4697dd535ea1cd}{B\+U\+T\+T\+O\+N\+\_\+\+I\+R\+Qn}} \mbox{[}\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga43d47e509ada64329393005c3be15d64}{B\+U\+T\+T\+O\+Nn}}\mbox{]} = \{\mbox{\hyperlink{group___s_t_m32_f1_x_x___n_u_c_l_e_o___l_o_w___l_e_v_e_l___b_u_t_t_o_n_ga2e6e65a053529869d1c370610825d98f}{U\+S\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+E\+X\+T\+I\+\_\+\+I\+R\+Qn}}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides set of firmware functions to manage Leds and push-\/button available on S\+T\+M32\+N\+U\+C\+L\+EO Kit from S\+T\+Microelectronics. It provides also functions to configure and manage the S\+T\+M32\+F3xx resources (S\+PI and A\+DC) used to drive L\+CD, u\+SD card and Joystick available on adafruit 1.\+8" T\+FT shield. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11-\/February-\/2014 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2014 S\+T\+Microelectronics\end{center} }
+
+Licensed under M\+C\+D-\/\+ST Liberty SW License Agreement V2, (the \char`\"{}\+License\char`\"{}); You may not use this file except in compliance with the License. You may obtain a copy of the License at\+: \begin{DoxyVerb}   http://www.st.com/software_license_agreement_liberty_v2
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+A\+S I\+S\char`\"{} B\+A\+S\+IS, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+T\+I\+ES OR C\+O\+N\+D\+I\+T\+I\+O\+NS OF A\+NY K\+I\+ND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

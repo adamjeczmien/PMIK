@@ -1,0 +1,153 @@
+\hypertarget{lcd_8c}{}\section{src/lcd.c File Reference}
+\label{lcd_8c}\index{src/lcd.c@{src/lcd.c}}
+
+
+File defining functions used with H\+D44780 L\+CD display.  
+
+
+{\ttfamily \#include \char`\"{}stm32f10x.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}global\+Var.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{lcd_8c_a4b284a0a982b9885719963bf89cc10ca}{lcd\+\_\+send\+Half}} (uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Send one half of the byte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a84678e89c85d944ffc0097c827799910}{lcd\+\_\+write\+\_\+byte}} (uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Send byte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a61b62074a069a021ac9394a2818512d2}{lcd\+\_\+write\+\_\+cmd}} (uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Send command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a27a064b1fe34b0037993c515502bb541}{lcd\+\_\+char}} (char data)
+\begin{DoxyCompactList}\small\item\em Send one char. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_ab8cfb10b2000f0654d6241ce6ce01ba6}{lcd\+\_\+locate}} (uint8\+\_\+t x, uint8\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Change location of the cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a4d3085693fbd65ab8bbc3806e28804b0}{lcd\+\_\+gpio\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize I/O Pins used with display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_aa53c9d40f3aa552a9974cd55ac510cb3}{L\+C\+D\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Startup function for the display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a13bc0540fb71708944a11ac1e3dd1b89}{lcd\+\_\+str}} (char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Send char string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_ad6e1f24906318879f362bc84668325b7}{lcd\+\_\+str\+\_\+\+XY}} (uint8\+\_\+t x, uint8\+\_\+t y, char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Send char string to specified location on the display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a3602423ed227641f4dcb6d4d8febbd37}{lcd\+Show\+Temperature}} (void)
+\begin{DoxyCompactList}\small\item\em Make temperature measurement screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8c_a4339b1e29197edf6cc7acee1773bf8b3}{lcd\+Say\+Hello}} (void)
+\begin{DoxyCompactList}\small\item\em Make \char`\"{}\+Hello\char`\"{} screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File defining functions used with H\+D44780 L\+CD display. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lcd_8c_a27a064b1fe34b0037993c515502bb541}\label{lcd_8c_a27a064b1fe34b0037993c515502bb541}} 
+\index{lcd.c@{lcd.c}!lcd\_char@{lcd\_char}}
+\index{lcd\_char@{lcd\_char}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_char()}{lcd\_char()}}
+{\footnotesize\ttfamily void lcd\+\_\+char (\begin{DoxyParamCaption}\item[{char}]{data }\end{DoxyParamCaption})}
+
+
+
+Send one char. 
+
+\mbox{\Hypertarget{lcd_8c_a4d3085693fbd65ab8bbc3806e28804b0}\label{lcd_8c_a4d3085693fbd65ab8bbc3806e28804b0}} 
+\index{lcd.c@{lcd.c}!lcd\_gpio\_init@{lcd\_gpio\_init}}
+\index{lcd\_gpio\_init@{lcd\_gpio\_init}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_gpio\_init()}{lcd\_gpio\_init()}}
+{\footnotesize\ttfamily void lcd\+\_\+gpio\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize I/O Pins used with display. 
+
+\mbox{\Hypertarget{lcd_8c_aa53c9d40f3aa552a9974cd55ac510cb3}\label{lcd_8c_aa53c9d40f3aa552a9974cd55ac510cb3}} 
+\index{lcd.c@{lcd.c}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Startup function for the display. 
+
+Functions. \mbox{\Hypertarget{lcd_8c_ab8cfb10b2000f0654d6241ce6ce01ba6}\label{lcd_8c_ab8cfb10b2000f0654d6241ce6ce01ba6}} 
+\index{lcd.c@{lcd.c}!lcd\_locate@{lcd\_locate}}
+\index{lcd\_locate@{lcd\_locate}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_locate()}{lcd\_locate()}}
+{\footnotesize\ttfamily void lcd\+\_\+locate (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x,  }\item[{uint8\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Change location of the cursor. 
+
+\mbox{\Hypertarget{lcd_8c_a4b284a0a982b9885719963bf89cc10ca}\label{lcd_8c_a4b284a0a982b9885719963bf89cc10ca}} 
+\index{lcd.c@{lcd.c}!lcd\_sendHalf@{lcd\_sendHalf}}
+\index{lcd\_sendHalf@{lcd\_sendHalf}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_sendHalf()}{lcd\_sendHalf()}}
+{\footnotesize\ttfamily void lcd\+\_\+send\+Half (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Send one half of the byte. 
+
+\mbox{\Hypertarget{lcd_8c_a13bc0540fb71708944a11ac1e3dd1b89}\label{lcd_8c_a13bc0540fb71708944a11ac1e3dd1b89}} 
+\index{lcd.c@{lcd.c}!lcd\_str@{lcd\_str}}
+\index{lcd\_str@{lcd\_str}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_str()}{lcd\_str()}}
+{\footnotesize\ttfamily void lcd\+\_\+str (\begin{DoxyParamCaption}\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Send char string. 
+
+\mbox{\Hypertarget{lcd_8c_ad6e1f24906318879f362bc84668325b7}\label{lcd_8c_ad6e1f24906318879f362bc84668325b7}} 
+\index{lcd.c@{lcd.c}!lcd\_str\_XY@{lcd\_str\_XY}}
+\index{lcd\_str\_XY@{lcd\_str\_XY}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_str\_XY()}{lcd\_str\_XY()}}
+{\footnotesize\ttfamily void lcd\+\_\+str\+\_\+\+XY (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x,  }\item[{uint8\+\_\+t}]{y,  }\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Send char string to specified location on the display. 
+
+\mbox{\Hypertarget{lcd_8c_a84678e89c85d944ffc0097c827799910}\label{lcd_8c_a84678e89c85d944ffc0097c827799910}} 
+\index{lcd.c@{lcd.c}!lcd\_write\_byte@{lcd\_write\_byte}}
+\index{lcd\_write\_byte@{lcd\_write\_byte}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_write\_byte()}{lcd\_write\_byte()}}
+{\footnotesize\ttfamily void lcd\+\_\+write\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Send byte. 
+
+\mbox{\Hypertarget{lcd_8c_a61b62074a069a021ac9394a2818512d2}\label{lcd_8c_a61b62074a069a021ac9394a2818512d2}} 
+\index{lcd.c@{lcd.c}!lcd\_write\_cmd@{lcd\_write\_cmd}}
+\index{lcd\_write\_cmd@{lcd\_write\_cmd}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcd\_write\_cmd()}{lcd\_write\_cmd()}}
+{\footnotesize\ttfamily void lcd\+\_\+write\+\_\+cmd (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Send command. 
+
+\mbox{\Hypertarget{lcd_8c_a4339b1e29197edf6cc7acee1773bf8b3}\label{lcd_8c_a4339b1e29197edf6cc7acee1773bf8b3}} 
+\index{lcd.c@{lcd.c}!lcdSayHello@{lcdSayHello}}
+\index{lcdSayHello@{lcdSayHello}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcdSayHello()}{lcdSayHello()}}
+{\footnotesize\ttfamily void lcd\+Say\+Hello (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Make \char`\"{}\+Hello\char`\"{} screen. 
+
+\mbox{\Hypertarget{lcd_8c_a3602423ed227641f4dcb6d4d8febbd37}\label{lcd_8c_a3602423ed227641f4dcb6d4d8febbd37}} 
+\index{lcd.c@{lcd.c}!lcdShowTemperature@{lcdShowTemperature}}
+\index{lcdShowTemperature@{lcdShowTemperature}!lcd.c@{lcd.c}}
+\subsubsection{\texorpdfstring{lcdShowTemperature()}{lcdShowTemperature()}}
+{\footnotesize\ttfamily void lcd\+Show\+Temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Make temperature measurement screen. 
+
